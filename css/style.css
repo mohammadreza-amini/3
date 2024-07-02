@@ -12,6 +12,15 @@ body {
   font-family: "vazir";
   direction: rtl;
 }
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 500px;
+    margin: auto;
+}
 
 header#header {
   width: 100%;
@@ -77,8 +86,36 @@ header nav ul li a:hover {
   width: 150px;
 }
 
-.test {
-  height: 500px;
-  width: 100%;
-  background-color: red;
+.wolf{
+    height: 631px;
+    background-image: url(../images/wolf.svg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.wolf .wolf-tite{
+    width: 100%;
+    text-align: center;
+    padding-top: 15px;
+}
+.wolf .wolf-tite h1{
+    font-size: 25px;
+    color: #fff;
+}
+.wolf .wolf-tite p{
+    color: #fff;
+    margin-top: 10px;
+}
+
+.wolf .wolf-content{
+    color: #fff;
+}
+
+.wolf .wolf-content p{
+    text-align: center;
+    font-weight: 900;
+    color: black;
+    padding-left: 80px;
 }

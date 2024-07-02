@@ -1,40 +1,84 @@
-body{
-    margin: 0;
-    padding: 0;
+@font-face {
+  font-family: "vazir";
+  src: url("../font/vazir.eot") format("eot"),
+    url("../font/vazir.ttf") format("truetype"),
+    url("../font/vazir.woff") format("woff2"),
+    url("../font/vazir.woff2") format("woff");
 }
 
-header#header{
-    width: 100%;
-    height: 100vh;
-    position: relative;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "vazir";
+  direction: rtl;
 }
 
-.for{
-    position: absolute;
-    right: 0;
-    left: 0;
-    bottom: 0;
+header#header {
+  width: 100%;
+  height: 100vh;
+  position: relative;
 }
 
-.sky{
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
+header nav {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
 }
 
-.moon{
-    position: absolute;
-    top: 76%;
-    left: 45%;
-    width: 150px;
+header nav ul {
+  display: flex;
+  justify-content: center;
+width: 100%;
+  list-style: none;
+  margin: 10px 0;
+  padding: 0;
 }
 
-.test{
-    height: 500px;
-    width: 100%;
-    background-color: red;
+header nav ul li {
+  margin: 0 10px;
+}
+
+header nav ul li a {
+  color: #fff;
+  font-size: 15px;
+  text-decoration: none;
+  transition:all 0.3s ease-in-out;
+  -webkit-transition:all 0.3s ease-in-out;
+  -moz-transition:all 0.3s ease-in-out;
+  -ms-transition:all 0.3s ease-in-out;
+  -o-transition:all 0.3s ease-in-out;
+}
+
+header nav ul li a:hover {
+  color: rgb(226, 95, 43);
+}
+
+.for {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.sky {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.moon {
+  position: absolute;
+  top: 76%;
+  left: 45%;
+  width: 150px;
+}
+
+.test {
+  height: 500px;
+  width: 100%;
+  background-color: red;
 }

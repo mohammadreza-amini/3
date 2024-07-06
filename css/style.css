@@ -1,9 +1,9 @@
 @font-face {
   font-family: "vazir";
-  src: url("../font/vazir.eot") format("eot"),
-    url("../font/vazir.ttf") format("truetype"),
-    url("../font/vazir.woff") format("woff2"),
-    url("../font/vazir.woff2") format("woff");
+  src: url("../Font/Vazir.eot") format("eot"),
+    url("../Font/Vazir.ttf") format("truetype"),
+    url("../Font/Vazir.woff") format("woff2"),
+    url("../Font/Vazir.woff2") format("woff");
 }
 
 body {
@@ -15,6 +15,10 @@ body {
 h1,h2,h3,h4,h5,h6{
     margin: 0;
     padding: 0;
+}
+
+ul {
+  list-style-type: none;
 }
 
 .container{
@@ -118,4 +122,98 @@ header nav ul li a:hover {
     font-weight: 900;
     color: black;
     padding-left: 80px;
+    text-align: justify;
+}
+
+/* footer */
+
+footer{
+  background-image: url(../images/lionbg.svg);
+  background-size: cover;
+  height: 700px; 
+  position: relative;
+}
+
+footer .overlay{
+  background-color: rgba(22, 2, 31, 0.918);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 100px 0;
+}
+
+footer .overlay .footer-title{
+  text-align: center;
+  color: #fff;
+}
+
+footer .overlay .footer-title h1{
+  margin-bottom: 10px;
+}
+
+footer .overlay .footer-title p{
+  text-align: justify;
+}
+
+footer .overlay form{
+  width: 450px;
+  margin: auto;
+text-align: center;
+}
+
+footer .overlay form input{
+  width: 100%;
+  margin: 10px 0;
+  padding: 5px;
+  font-family: Vazir;
+}
+
+footer .overlay form button{
+  padding: 10px;
+  width: 150px;
+  background-color: #fff;
+  border: 2px solid rgb(55, 21, 71);
+  margin-top: 7px;
+  font-family: Vazir;
+  transition:all 0.3s ease-in ;
+  -webkit-transition:all 0.3s ease-in ;
+  -moz-transition:all 0.3s ease-in ;
+  -ms-transition:all 0.3s ease-in ;
+  -o-transition:all 0.3s ease-in ;
+}
+
+footer .overlay form button:hover{
+  background-color: rgb(74, 11, 126);
+  cursor: pointer;
+  border: 2px solid #fff;
+}
+
+footer .overlay .social{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+footer .overlay .social ul{
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+  padding: 0;
+}
+
+footer .overlay .social ul li a{
+  color: #fff;
+}
+
+footer .overlay .social ul li a svg{
+  font-size: 22px;
+}
+
+footer .overlay .description{
+  text-align: center;
+  color: #fff;
+  text-align: justify;
 }

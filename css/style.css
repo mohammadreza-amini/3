@@ -97,6 +97,7 @@ header nav ul li a:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    display: flex;
 }
 
 .wolf .wolf-tite{
@@ -115,6 +116,7 @@ header nav ul li a:hover {
 
 .wolf .wolf-content{
     color: #fff;
+    display: flex;
 }
 
 .wolf .wolf-content p{
@@ -132,6 +134,7 @@ footer{
   background-size: cover;
   height: 700px; 
   position: relative;
+  display: flex;
 }
 
 footer .overlay{
